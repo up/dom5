@@ -175,7 +175,8 @@
   }
 
   /**
-   * Store string data associated with the matched element or return the value at the named data store of matched elements.
+   * Store string data associated with the matched element or return the value at 
+   * the named data store of matched elements.
    *
    * @example
    * document.find('body').data('foo', '42');
@@ -411,3 +412,4 @@
   
 
 }(Document, Element, Window, NodeList, CSSStyleDeclaration, String, Event));
+
