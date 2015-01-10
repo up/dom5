@@ -1,9 +1,7 @@
 var 
   pkg = require('./package.json'),
-  
   gulp = require('gulp'),
   gutil = require('gulp-util'),
-
   jshint = require('gulp-jshint'),
   jscs = require('gulp-jscs'),
   //concatSourcemap = require('gulp-concat-sourcemap'),
