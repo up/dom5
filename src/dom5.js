@@ -16,7 +16,7 @@
 
   [].forEach.call(arguments, function(item) {
     
-		item.fn = item.prototype;
+    item.fn = item.prototype;
 
     // Shortcuts
     if (item === Document || item === Element || item === Window) {
