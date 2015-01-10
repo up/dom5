@@ -49,7 +49,7 @@ gulp.task('Check code style of scripts',
   }
 );
 
-gulp.task('Compress scripts', 
+gulp.task('Minify script', 
   function() {
     return gulp.src('src/dom5.js')
       .pipe(uglify())
@@ -59,7 +59,7 @@ gulp.task('Compress scripts',
   }
 );
 
-gulp.task('Estimate gzip estimation of minified script', 
+gulp.task('Estimate gzip size of minified script', 
   shell.task([
     'echo "[INFO] GZIPSIZE \'' + gutil.colors.cyan(outFileJS) + '\' estimated' +
       gutil.colors.magenta('" `gzip -c ' + outDirJS + '/' + outFileJS + ' | wc -c ` "bytes"') + ' [INFO]'
@@ -70,6 +70,6 @@ gulp.task('Estimate gzip estimation of minified script',
 gulp.task('default', [
   'Lint scripts',
   'Check code style of scripts',
-  'Compress scripts',
-  'Estimate gzip estimation of minified script'
+  'Minify script',
+  'Estimate gzip size of minified script'
 ]);
