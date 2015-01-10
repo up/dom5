@@ -1,15 +1,16 @@
-/* jslint browser: true */
-/* global Document, Element, Window, NodeList, CSSStyleDeclaration */
-
 /**
  * dom5
  * ES5 DOM Monkey Patching
- * extends native objects (Window, Document, Element and NodeList) 
+ *
+ * Extends native objects (Window, Document, Element and NodeList) 
  * and some DOM related String and Event methods
  *
  * copyright (c) 2014 - 2015 Uli Preuss
  * http://github.com/up/dom5
  */
+
+/* jslint browser: true */
+/* global Document, Element, Window, NodeList, CSSStyleDeclaration */
 
 (function(Document, Element, Window, NodeList, CSSStyleDeclaration, String, Event) {
 
