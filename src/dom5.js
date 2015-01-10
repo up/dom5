@@ -152,7 +152,7 @@
 
   /**
    * For matched element, get the first element that matches the selector by testing the element itself 
-	 * and traversing up through its ancestors in the DOM tree.
+   * and traversing up through its ancestors in the DOM tree.
    *
    * @example
    * document.find('li span#inner').closest("ul.accordion");
