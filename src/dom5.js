@@ -14,9 +14,9 @@
 
 (function(Document, Element, Window, NodeList, CSSStyleDeclaration, String, Event) {
 
-  [].forEach.call(
-  arguments, function(item) {
-    item.fn = item.prototype;
+  [].forEach.call(arguments, function(item) {
+    
+		item.fn = item.prototype;
 
     // Shortcuts
     if (item === Document || item === Element || item === Window) {
