@@ -1,0 +1,31 @@
+{
+  "name": "dom5",
+  "version": "0.1.0",
+  "description": "Shameless extending of native objects (Window, Document, Element, NodeList, String and Event)",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/up/dom5.git"
+  },
+  "author": "Uli Preuss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/up/dom5/issues"
+  },
+  "homepage": "https://github.com/up/dom5",
+  "devDependencies": {
+    "gulp-concat": "^2.4.3",
+    "gulp-csso": "^0.2.9",
+    "gulp-header": "^1.2.2",
+    "gulp-jscs": "^1.4.0",
+    "gulp-shell": "^0.2.11",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.2"
+  }
+}

@@ -1,6 +1,5 @@
 /* jslint browser: true */
 /* global describe, beforeEach, afterEach, expect, it */
-
 describe("DOM5+ Attribute API", function() {
   
   var body;
@@ -55,7 +54,7 @@ describe("DOM5+ Attribute API", function() {
     });
 
     it("should be able to set an object as a JSON string value", function() {
-      document.find("body").data('foo', { number: 16 });
+      document.find("body").data('foo', {number: 16});
       expect(body.getAttribute('data-foo')).toEqual('{"number":16}');
     });
 

@@ -2,16 +2,16 @@
 /* global describe, beforeEach, afterEach, expect, it */
 
 describe("DOM5+ Selector API", function() {
-  
+
   var body, div;
-  
+
   beforeEach(function() {
     body = document.querySelector("body");
     div = document.createElement('div');
     div.id = 'test-div';
     body.appendChild(div);
   });
-  
+
   afterEach(function() {
     body.removeChild(div);
   });
@@ -20,13 +20,13 @@ describe("DOM5+ Selector API", function() {
     expect(document.find("body").toString()).toEqual('[object HTMLBodyElement]');
   });
 
-  it("should be able to find a node list", function() {    
+  it("should be able to find a node list", function() {
     div.appendChild(document.createElement('span'));
     div.appendChild(document.createElement('span'));
     div.appendChild(document.createElement('span'));
     expect(document.findAll("div#test-div span").length).toEqual(3);
   });
-  
+
   it("should be able to find the closest node with given selector", function() {
     var div1 = document.createElement('div');
     var div2 = document.createElement('div');
@@ -34,13 +34,13 @@ describe("DOM5+ Selector API", function() {
     div.appendChild(div1);
     expect(div2.closest("div#test-div").toString()).toEqual('[object HTMLDivElement]');
   });
-  
+
   it("should be able to iterate over a nodelist and executing a function for each matched element", function() {
     var counter = 2;
     div.appendChild(document.createElement('span'));
     div.appendChild(document.createElement('span'));
-    document.findAll('div#test-div span').each(function(){
-      counter+=3;
+    document.findAll('div#test-div span').each(function() {
+      counter += 3;
     });
     expect(counter).toEqual(8);
   });
@@ -59,4 +59,3 @@ describe("DOM5+ Selector API", function() {
   });
 
 });
-

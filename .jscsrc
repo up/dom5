@@ -1,0 +1,51 @@
+/** 
+  * JavaScript Code Style
+  * https://www.npmjs.org/package/jscs
+  *
+  * CONFIGURATION
+*/
+
+{
+  "disallowSpacesInsideObjectBrackets": true,
+  
+  //"requireSpaceBeforeBlockStatements": true,
+  
+  //"requireSpacesInFunctionExpression": {
+  //  "beforeOpeningRoundBrace": true,
+  //  "beforeOpeningCurlyBrace": true
+  //},
+  
+  "requireParenthesesAroundIIFE": true,
+  
+  "requireSpacesInConditionalExpression": {
+    "afterTest": true,
+    "beforeConsequent": true,
+    "afterConsequent": true,
+    "beforeAlternate": true
+  },
+
+  "requireCurlyBraces": [
+    "if",
+    "else",
+    "for",
+    "while",
+    "do",
+    "try",
+    "catch"//,
+    //"case",
+    //"default"
+  ],
+
+  "requireSpaceAfterKeywords": [
+    // "if",
+    // "else",
+    //"for",
+    //"while",
+    //"do",
+    //"switch",
+     //"try",
+    //"catch",
+   "return"
+  ]
+  
+}
