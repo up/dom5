@@ -2,15 +2,13 @@
 /* global Document, Element, Window, NodeList, CSSStyleDeclaration */
 
 /**
- * dom5+
- * DOM Monkey Patching
+ * dom5
+ * ES5 DOM Monkey Patching
  * extends native objects (Window, Document, Element and NodeList) 
  * and some DOM related String and Event methods
- * shortcuts for Events, .. 
- * requires ES5 support
  *
  * copyright (c) 2014 - 2015 Uli Preuss
- * http://github.com/up/dom5+
+ * http://github.com/up/dom5
  */
 
 (function(Document, Element, Window, NodeList, CSSStyleDeclaration, String, Event) {
