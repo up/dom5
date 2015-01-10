@@ -1,0 +1,19 @@
+# OS Generated Files
+.DS_Store
+
+# Local Development (Files and Folders)
+# starting with an unterscore
+\_*
+
+# NodeJS
+node_modules
+
+# external data
+
+# tests
+lib
+coverage
+test-results.xml
+
+# Gulp
+# gulpfile.js
