@@ -1,7 +1,5 @@
 /**
  * dom5
- * ES5 DOM Monkey Patching
- *
  * Extends native objects (Window, Document, Element and NodeList) 
  * and some DOM related String and Event methods
  *
